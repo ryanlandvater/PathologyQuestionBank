@@ -5,6 +5,8 @@
 This is the University of Michigan, Department of Pathology Education Question Bank System.\
 Created by [Ryan Landvater, MD MEng](mailto:rylandva@med.umich.edu), and copyright 2020-2021.
 
+The distributed application outlined here can be accessed on the [Apple App Store](https://apps.apple.com/us/app/michigan-pathology-qbank/id1538372884) for MacOS and iOS. 
+
 Use of this system, modifications, and rebranding for your institution must adhere to the GNU Lesser General Public License v. 3 (“LGPL”) both with respect to the code provided here and with use of the underlying dependencies, including but not limited to the [Qt Framework LGPL](https://www.qt.io/licensing/open-source-lgpl-obligations#lgpl)(The Qt Company).
 
 The Pathology education question bank client application ("the software") is provided as an open-source project and as such the software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the author(s) or any copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or use or other dealings in the software. *For more information regarding the license agreement, please see the **LICENSE** file within the repository.*
