@@ -138,12 +138,12 @@ wasm: {
 }
 
 win32: {
-    INCLUDEPATH += C:/Boost/include/boost-1_73
-    DEPENDPATH += C:/Boost/include/boost-1_73
-    INCLUDEPATH += C:/FlatBuffers/include
-    DEPENDPATH += C:/FlatBuffers/include
+    INCLUDEPATH += $$PWD/dependencies/include
+    DEPENDPATH += $$PWD/dependencies/include
     INCLUDEPATH += 'C:/Program Files/OpenSSL-Win64/include'
     DEPENDPATH += 'C:/Program Files/OpenSSL-Win64/include'
+    LIBS += $$PWD/dependencies/lib -Wa,-mbig-obj -llibssl -llibcrypto
+
     !win32-g++: QMAKE_CXXFLAGS += /bigobj -D_WIN32_WINNT_WIN10
     win32-g++:  QMAKE_CXXFLAGS += -Wa,-mbig-obj
 

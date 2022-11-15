@@ -15,6 +15,7 @@
 #include <QSettings>
 #include <optional>
 #include <mutex>
+#include <condition_variable>
 
 #include "QBBuffer_generated.h"
 
