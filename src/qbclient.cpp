@@ -4,6 +4,7 @@
 //
 //  Created by Ryan Landvater on 8/2/20.
 //  Copyright © 2020-21 Ryan Landvater. All rights reserved.
+#define _WIN32_WINNT_WIN10                  0x0A00 // Windows 10
 
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
@@ -33,8 +34,7 @@ QBClient::QBClient(QQmlApplicationEngine* engine,
     _socket(*socket),
     _imageDrawer(new QBImageProvider(this)),
     _persist(QSettings::IniFormat,
-             QSettings::UserScope,
-             "MichiganPathology",
+             QSettings::UserScope,"MichiganPathology",
              "PathologyQbank",this),
     _state(login),
     _keepLogin(false),

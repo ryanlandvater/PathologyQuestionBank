@@ -6,11 +6,11 @@ QT += svg
 CONFIG += c++17
 CONFIG += app_bundle
 
-APPLICATION_NAME = "Michigan Pathology QBank"
+#APPLICATION_NAME = "Michigan Pathology QBank"
 VERSION_MAJOR = 0
 VERSION_MINOR = 5
 VERSION_BUILD = 2
-ORGANIZATION_NAME = \"Michigan\ Medicine\"
+#ORGANIZATION_NAME = "Michigan Medicine"
 
 DEFINES +=  "APPLICATION_NAME=$$APPLICATION_NAME"\
             "VERSION_MAJOR=$$VERSION_MAJOR"\
@@ -140,25 +140,23 @@ wasm: {
 win32: {
     INCLUDEPATH += $$PWD/dependencies/include
     DEPENDPATH += $$PWD/dependencies/include
-    INCLUDEPATH += 'C:/Program Files/OpenSSL-Win64/include'
-    DEPENDPATH += 'C:/Program Files/OpenSSL-Win64/include'
-    LIBS += $$PWD/dependencies/lib -Wa,-mbig-obj -llibssl -llibcrypto
+    LIBS += -L$$PWD\dependencies\lib -llibssl -llibcrypto
 
     !win32-g++: QMAKE_CXXFLAGS += /bigobj -D_WIN32_WINNT_WIN10
-    win32-g++:  QMAKE_CXXFLAGS += -Wa,-mbig-obj
+    win32-g++:  QMAKE_CXXFLAGS += -g -m64 -Wa,-mbig-obj -DCMAKE_CXX_FLAGS=-O2
 
-    !win32-g++:CONFIG(release, debug|release): LIBS += -L'C:/Boost/lib/' -llibboost_thread-vc142-mt-x64-1_73
-    !win32-g++:CONFIG(debug, debug|release): LIBS +=  -L'C:/Boost/lib/'  -llibboost_thread-vc142-mt-gd-x64-1_73
-    win32-g++: LIBS += -LC:/Boost/lib/ -lboost_thread-mgw8-mt-x64-1_73 -lwsock32 -lws2_32
-    win32-g++: LIBS += -LC:/FlatBuffers/lib -lflatbuffers
+#    !win32-g++:CONFIG(release, debug|release): LIBS += -L'C:/Boost/lib/' -llibboost_thread-vc142-mt-x64-1_73
+#    !win32-g++:CONFIG(debug, debug|release): LIBS +=  -L'C:/Boost/lib/'  -llibboost_thread-vc142-mt-gd-x64-1_73
+#    win32-g++: LIBS += -LC:/Boost/lib/ -lboost_thread-mgw8-mt-x64-1_73 -lwsock32 -lws2_32
+#    win32-g++: LIBS += -LC:/FlatBuffers/lib -lflatbuffers
 
-    !win32-g++: PRE_TARGETDEPS += C:/Boost/lib/libboost_thread-vc142-mt-x64-1_73.lib
+#    !win32-g++: PRE_TARGETDEPS += C:/Boost/lib/libboost_thread-vc142-mt-x64-1_73.lib
 
-    win32: LIBS += -L'C:/Program Files/OpenSSL-Win64/lib/' -llibssl -llibcrypto
+#    win32: LIBS += -L'C:/Program Files/OpenSSL-Win64/lib/' -llibssl -llibcrypto
 
-    !win32-g++: PRE_TARGETDEPS += 'C:/Program Files/OpenSSL-Win64/lib/libssl.lib'
-#    win32-g++: PRE_TARGETDEPS += 'C:/Program Files/OpenSSL-Win64/lib/liblibssl_static.a'
-    !win32-g++: PRE_TARGETDEPS += 'C:/Program Files/OpenSSL-Win64/lib/libcrypto.lib'
-#    win32-g++: PRE_TARGETDEPS += 'C:/Program Files/OpenSSL-Win64/lib/liblibcrypto_static.a'
+#    !win32-g++: PRE_TARGETDEPS += 'C:/Program Files/OpenSSL-Win64/lib/libssl.lib'
+##    win32-g++: PRE_TARGETDEPS += 'C:/Program Files/OpenSSL-Win64/lib/liblibssl_static.a'
+#    !win32-g++: PRE_TARGETDEPS += 'C:/Program Files/OpenSSL-Win64/lib/libcrypto.lib'
+##    win32-g++: PRE_TARGETDEPS += 'C:/Program Files/OpenSSL-Win64/lib/liblibcrypto_static.a'
 
 }

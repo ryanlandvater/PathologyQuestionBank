@@ -7,7 +7,6 @@
 
 #ifndef QBCLIENT_H
 #define QBCLIENT_H
-
 #include <QObject>
 #include <QFile>
 #include <QVariantMap>

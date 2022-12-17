@@ -5,7 +5,7 @@
 //  Created by Ryan Landvater on 8/2/20.
 //  Copyright © 2020-21 Ryan Landvater. Please review LICENCE agreement.
 
-//#include <QGuiApplication>
+#define _WIN32_WINNT_WIN10                  0x0A00 // Windows 10
 #include <QtWidgets/QApplication>
 #include <QQmlApplicationEngine>
 #include <QQuickStyle>

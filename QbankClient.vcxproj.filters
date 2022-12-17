@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts;xlf</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts;xlf</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Distribution Files">
+      <UniqueIdentifier>{B83CAF91-C7BF-462F-B76C-EA11631F866C}</UniqueIdentifier>
+      <Extensions>*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Distribution Files">
+      <UniqueIdentifier>{B83CAF91-C7BF-462F-B76C-EA11631F866C}</UniqueIdentifier>
+      <Extensions>*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\qbclient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\qbimageprovider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\qbwebsocketsession.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\QBBuffer_generated.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\QB_jsonNodes.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\qbclient.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\qbimageprovider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\qbwebsocketsession.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="QbankClient_en_US.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\components\AddTagsPopup.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\components\DasbordPane.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\components\DeleteQuestionPopup.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\components\FileDragPopup.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\components\FlickableImageView.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\components\LoginFrame.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\components\NewTestPane.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\components\QBGenericList.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\assets\QBank.icns">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\assets\QBankIcon.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\assets\QBankIcon_small.icns">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\components\QuestionFeaturesPane.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\components\QuestionView.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\components\QuestionWriterPane.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\components\ScoreBreakdownPane.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\components\SearchField.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\components\UserPane.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\components\UserProfilePopup.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\assets\backgrn_tile.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\assets\backgrn_tile_white.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\dashboard.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\assets\green_check.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\assets\grey_check.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\assets\grey_x.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\assets\lock.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\login.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\main.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\assets\marked.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\assets\marked_light.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\assets\next_question.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\assets\next_question_hovered.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\assets\next_question_pressed.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\assets\pause_test.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\assets\pause_test_hover.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\assets\pause_test_pressed.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\assets\previous_question.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\assets\previous_question_hovered.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\assets\previous_question_pressed.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="resources\qml.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="resources\questionAnalytics.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\questionEditor.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\assets\red_x.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\scoreView.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\sharedTest.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\assets\submitTest.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\assets\submitTest_hover.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\assets\submitTest_pressed.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\testView.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\assets\unmarked_grey.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\assets\whiteLogo.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\assets\zoom_in.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\assets\zoom_in_low.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\assets\zoom_out.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\assets\zoom_out_low.png">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\UI\components\LoginFrame.qml">
+      <Filter>Distribution Files</Filter>
+    </None>
+    <None Include="src\UI\components\UserPane.qml">
+      <Filter>Distribution Files</Filter>
+    </None>
+    <None Include="src\UI\login.qml">
+      <Filter>Distribution Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\PathologyQbank_resource.rc" />
+  </ItemGroup>
+</Project>

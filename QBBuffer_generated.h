@@ -6,20 +6,13 @@
 
 #include "flatbuffers/flatbuffers.h"
 
-// Ensure the included flatbuffers.h is the same version as when this file was
-// generated, otherwise it may not be compatible.
-static_assert(FLATBUFFERS_VERSION_MAJOR == 22 &&
-              FLATBUFFERS_VERSION_MINOR == 10 &&
-              FLATBUFFERS_VERSION_REVISION == 26,
-             "Non-compatible flatbuffers version included");
-
 struct ImageMetadata;
 struct ImageMetadataBuilder;
 
 struct QBBuffer;
 struct QBBufferBuilder;
 
-enum BufferType : int8_t {
+enum BufferType {
   BufferType_image = 0,
   BufferType_MIN = BufferType_image,
   BufferType_MAX = BufferType_image
@@ -46,7 +39,7 @@ inline const char *EnumNameBufferType(BufferType e) {
   return EnumNamesBufferType()[index];
 }
 
-enum Metadata : uint8_t {
+enum Metadata {
   Metadata_NONE = 0,
   Metadata_image_metadata = 1,
   Metadata_MIN = Metadata_NONE,
@@ -132,6 +125,7 @@ struct ImageMetadataBuilder {
         : fbb_(_fbb) {
     start_ = fbb_.StartTable();
   }
+  ImageMetadataBuilder &operator=(const ImageMetadataBuilder &);
   flatbuffers::Offset<ImageMetadata> Finish() {
     const auto end = fbb_.EndTable(start_);
     auto o = flatbuffers::Offset<ImageMetadata>(end);
@@ -196,9 +190,9 @@ struct QBBuffer FLATBUFFERS_FINAL_CLASS : private flatbuffers::Table {
   }
   bool Verify(flatbuffers::Verifier &verifier) const {
     return VerifyTableStart(verifier) &&
-           VerifyField<uint64_t>(verifier, VT_SIZE, 8) &&
-           VerifyField<int8_t>(verifier, VT_BUFFER_TYPE, 1) &&
-           VerifyField<uint8_t>(verifier, VT_METADATA_TYPE, 1) &&
+           VerifyField<uint64_t>(verifier, VT_SIZE) &&
+           VerifyField<int8_t>(verifier, VT_BUFFER_TYPE) &&
+           VerifyField<uint8_t>(verifier, VT_METADATA_TYPE) &&
            VerifyOffset(verifier, VT_METADATA) &&
            VerifyMetadata(verifier, metadata(), metadata_type()) &&
            VerifyOffset(verifier, VT_DATA) &&
@@ -234,6 +228,7 @@ struct QBBufferBuilder {
         : fbb_(_fbb) {
     start_ = fbb_.StartTable();
   }
+  QBBufferBuilder &operator=(const QBBufferBuilder &);
   flatbuffers::Offset<QBBuffer> Finish() {
     const auto end = fbb_.EndTable(start_);
     auto o = flatbuffers::Offset<QBBuffer>(end);
